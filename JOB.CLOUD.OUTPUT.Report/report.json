@@ -1,0 +1,255 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2},\"customTheme\":{\"name\":\"Tidal\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          },
+          {
+            "name": "Tidal",
+            "path": "BuiltInThemes/Tidal.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "EXECTUTIVE SUMMARY",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "766a81b2e0c837fb817f",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1f74ff292da6c971006c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":360,\"z\":1,\"width\":640,\"height\":360,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.Vendors\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Table1.Spend)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vendors\"},\"Name\":\"Table1.Vendors\",\"NativeReferenceName\":\"Vendors\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0},\"Name\":\"Sum(Table1.Spend)\",\"NativeReferenceName\":\"Sum of Spend\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 360.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"35e3950b476694685f18\",\"layouts\":[{\"id\":0,\"position\":{\"x\":641.25,\"y\":0,\"z\":2,\"width\":606.25,\"height\":360,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Table1.CPC)\"},{\"queryRef\":\"Sum(Table1.CPA)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPC\"}},\"Function\":0},\"Name\":\"Sum(Table1.CPC)\",\"NativeReferenceName\":\"CPC\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPA\"}},\"Function\":0},\"Name\":\"Sum(Table1.CPA)\",\"NativeReferenceName\":\"Sum of CPA\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPC\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 606.25,
+          "x": 641.25,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"76d3f53e0cfa7ffb1863\",\"layouts\":[{\"id\":0,\"position\":{\"x\":641,\"y\":360,\"width\":606,\"height\":360,\"z\":3,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"I BELIEVE THE NEXT ANALYTIC STEP WOULD TO BE PREDICTING HOW MANY CLICKS AND APPLIES WE GET IF WE NARROW DOWN TO SPENDING ONLY ON THE TOP 3 VENDORS, TOP 10 COUNTRIES. WE WILL THEN ANALYZE HOW THE CLICKS VS. APPLIES CHANGES.\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 606.00,
+          "x": 641.00,
+          "y": 360.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"a2bd32c5145e5e931f54\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":641.25,\"height\":361.25,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.Country\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Table1.Clicks)\"},{\"queryRef\":\"Sum(Table1.Applies)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Country\"},\"Name\":\"Table1.Country\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0},\"Name\":\"Sum(Table1.Clicks)\",\"NativeReferenceName\":\"Sum of Clicks\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0},\"Name\":\"Sum(Table1.Applies)\",\"NativeReferenceName\":\"Sum of Applies\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 361.25,
+          "width": 641.25,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}",
+      "displayName": "LOCATION SPEND",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "a97254a837542beb02b3",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4396d6ba69e765099a4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":652,\"y\":360,\"z\":3000,\"width\":628,\"height\":125.33333333333333,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Table1.Spend)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0},\"Name\":\"Sum(Table1.Spend)\",\"NativeReferenceName\":\"Sum of Spend\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 125.33,
+          "width": 628.00,
+          "x": 652.00,
+          "y": 360.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"7fd803f90902ad8ea279\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.666666666666666,\"y\":0,\"z\":0,\"width\":641.3333333333334,\"height\":366.6666666666667,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.State\",\"active\":true},{\"queryRef\":\"Table1.Country\"}],\"Tooltips\":[{\"queryRef\":\"Sum(Table1.Spend)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"State\"},\"Name\":\"Table1.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Country\"},\"Name\":\"Table1.Country\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0},\"Name\":\"Sum(Table1.Spend)\",\"NativeReferenceName\":\"Sum of Spend\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 366.67,
+          "width": 641.33,
+          "x": 10.67,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bea97d40738a70cc30eb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.666666666666666,\"y\":360,\"z\":1000,\"width\":641.3333333333334,\"height\":361.3333333333333,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.Country\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Table1.Clicks)\"},{\"queryRef\":\"Sum(Table1.Applies)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Country\"},\"Name\":\"Table1.Country\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0},\"Name\":\"Sum(Table1.Clicks)\",\"NativeReferenceName\":\"Sum of Clicks\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0},\"Name\":\"Sum(Table1.Applies)\",\"NativeReferenceName\":\"Sum of Applies\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 361.33,
+          "width": 641.33,
+          "x": 10.67,
+          "y": 360.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c2b05643c3d5e0c5e829\",\"layouts\":[{\"id\":0,\"position\":{\"x\":652,\"y\":484,\"z\":4000,\"width\":628,\"height\":236,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"THIS TAB IS A SUMMARIZATION OF WHERE YOUR SPEND IS ALLOCATED \",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DATA VISUALIZATION 1 MAPS EXACTLY HOW MANY CLICKS AND APPLICATIONS YOU HAVE PER LOCATION. IT DETAILS DOWN TO STATES AS WELL.\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DATA VISUALIZATION 2 SHOWS YOU THE SUM OF APPLIES AND CLICKS PER COUNTRY\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DATA VISUALIZATION 3 GIVES YOU A BETTER READ AS TO WHAT PERCENTAGE OF YOUR FUNDING GOES TO EACH COUNTRY.\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"WE WILL USE THIS TO COMPARE HOW SUCCESSFUL YOU ARE SPENDING IN EACH LOCATION AND DECIDE IF THE OUTPUT IN WORTH TO MONEY\",\"textStyle\":{\"fontWeight\":\"bold\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 236.00,
+          "width": 628.00,
+          "x": 652.00,
+          "y": 484.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f5effc5a0a3b4b9412b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":651.6666666666667,\"y\":0,\"z\":2000,\"width\":630,\"height\":366.6666666666667,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Table1.Spend)\"}],\"Category\":[{\"queryRef\":\"Table1.Country\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0},\"Name\":\"Sum(Table1.Spend)\",\"NativeReferenceName\":\"Sum of Spend\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Country\"},\"Name\":\"Table1.Country\",\"NativeReferenceName\":\"Country\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 366.67,
+          "width": 630.00,
+          "x": 651.67,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "CLICKS/APPLICATIONS BY VENDOR",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b0f1355a27415dc65350",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3662f4428d9b5b7502e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":0,\"z\":3000,\"width\":146.66666666666666,\"height\":180,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Table1.Clicks)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0},\"Name\":\"Sum(Table1.Clicks)\",\"NativeReferenceName\":\"Sum of Clicks\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 180.00,
+          "width": 146.67,
+          "x": 640.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"5d4a4ac9839b6d66ee25\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.666666666666666,\"y\":0,\"z\":0,\"width\":629.3333333333334,\"height\":360,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.Vendors\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Table1.Applies)\"},{\"queryRef\":\"Sum(Table1.Clicks)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vendors\"},\"Name\":\"Table1.Vendors\",\"NativeReferenceName\":\"Vendors\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0},\"Name\":\"Sum(Table1.Applies)\",\"NativeReferenceName\":\"Sum of Applies\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0},\"Name\":\"Sum(Table1.Clicks)\",\"NativeReferenceName\":\"Sum of Clicks\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 629.33,
+          "x": 10.67,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5d8c4537e7927adae4cd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.666666666666666,\"y\":360,\"z\":1000,\"width\":629.3333333333334,\"height\":360,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedAreaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.Vendors\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Table1.Applies)\"},{\"queryRef\":\"Sum(Table1.Clicks)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vendors\"},\"Name\":\"Table1.Vendors\",\"NativeReferenceName\":\"Count of Vendors\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0},\"Name\":\"Sum(Table1.Applies)\",\"NativeReferenceName\":\"Applies\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0},\"Name\":\"Sum(Table1.Clicks)\",\"NativeReferenceName\":\"Sum of Clicks\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 629.33,
+          "x": 10.67,
+          "y": 360.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"97d2df6ca36049c34250\",\"layouts\":[{\"id\":0,\"position\":{\"x\":786.6666666666666,\"y\":0,\"z\":5000,\"width\":493.3333333333333,\"height\":360,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"THIS TAB HELPS US ANALYZE WHERE WE SEE THE MOST AMOUNT OF ACTION. WHICH VENDOR GETS MORE CLICKS AND HOW MANY ACTUALLY TURN INTO APPLICATIONS\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DATA VISUAL 1 SHOWS US HOW MANY CLICKS AND APPLICATIONS EACH VENDOR GAVE US\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DATA VISUAL 2 SHOWS US WHAT PERCENTAGE OF CLICKS ACTUAL APPLY PER VENDOR\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DATA VISUAL 3 SHOWS HOW MUCH WAS SPENT AT EACH VENDOR\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"WE WILL USE THE VISUALS TO DETERMINE WHICH VENDOR NOT REACHES THE HIGHEST AMOUNT OF APPLICANTS BUT JUST HOW MANY APPLY VERSUS JUST A CLICK THROUGH EACH VENDOR\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 493.33,
+          "x": 786.67,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"a2c9e3fcaa01dc5796ca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":180,\"z\":4000,\"width\":146.66666666666666,\"height\":180,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Table1.Applies)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0},\"Name\":\"Sum(Table1.Applies)\",\"NativeReferenceName\":\"Sum of Applies\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 180.00,
+          "width": 146.67,
+          "x": 640.00,
+          "y": 180.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"d358f9145604e1737770\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":360,\"z\":2000,\"width\":640,\"height\":360,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.Vendors\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Table1.Spend)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vendors\"},\"Name\":\"Table1.Vendors\",\"NativeReferenceName\":\"Vendors\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0},\"Name\":\"Sum(Table1.Spend)\",\"NativeReferenceName\":\"Sum of Spend\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Spend\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 640.00,
+          "x": 640.00,
+          "y": 360.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "CLICKS/APPLICATIONS COSTS",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "eb19524ca500802bc2bd",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"58549b974fc5cfca0a2e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"z\":1000,\"width\":231.25,\"height\":286.25,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Table1.CPA)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPA\"}},\"Function\":1},\"Name\":\"Sum(Table1.CPA)\",\"NativeReferenceName\":\"Average of CPA\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPA\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 286.25,
+          "width": 231.25,
+          "x": 10.00,
+          "y": 290.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"5efdd40efb62ad03635a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"z\":0,\"width\":461.25,\"height\":280,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Table1.CPC)\"},{\"queryRef\":\"Sum(Table1.CPA)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPC\"}},\"Function\":0},\"Name\":\"Sum(Table1.CPC)\",\"NativeReferenceName\":\"CPC\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPA\"}},\"Function\":0},\"Name\":\"Sum(Table1.CPA)\",\"NativeReferenceName\":\"Sum of CPA\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPC\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 461.25,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bf22325e914d97544312\",\"layouts\":[{\"id\":0,\"position\":{\"x\":481,\"y\":290,\"width\":461,\"height\":286,\"z\":4000,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"THIS TAB SHOWS US THE AVERAGE COSTS AND TOTAL SUMS PER CLICK/APPLY.\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"THIS GIVES US GREAT INSIGHT AS TO HOW MUCH EACH CLICK/APPLICATION COSTS US.\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DATA VISUAL 1 SHOWS US THE SUM OF OUR COSTS PER APPLY/CLICK.\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"VISUAL DATA 2 TELLS US THE AVERAGE OF COST PER CLICK/ COST PER APPLY.\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DATA VISUAL 3 SHOWS US HOW MANY CLICKS AND APPLIES WE HAD.\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 286.00,
+          "width": 461.00,
+          "x": 481.00,
+          "y": 290.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"dd2917008462aae76709\",\"layouts\":[{\"id\":0,\"position\":{\"x\":241,\"y\":290,\"width\":230,\"height\":286,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Table1.CPC)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPC\"}},\"Function\":1},\"Name\":\"Sum(Table1.CPC)\",\"NativeReferenceName\":\"Average of CPC\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CPC\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 286.00,
+          "width": 230.00,
+          "x": 241.00,
+          "y": 290.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e717501d57d453e3fc91\",\"layouts\":[{\"id\":0,\"position\":{\"x\":481,\"y\":0,\"width\":461,\"height\":280,\"z\":3000,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Table1.Clicks)\"},{\"queryRef\":\"Sum(Table1.Applies)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0},\"Name\":\"Sum(Table1.Clicks)\",\"NativeReferenceName\":\"Clicks\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Applies\"}},\"Function\":0},\"Name\":\"Sum(Table1.Applies)\",\"NativeReferenceName\":\"Applies\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Clicks\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 461.00,
+          "x": 481.00,
+          "y": 0.00,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Tidal"
+}
