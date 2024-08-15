@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "JOB.CLOUD.OUTPUTV2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a9876407-d1e4-4a44-bf19-dfdd886094b8"
+  }
+}

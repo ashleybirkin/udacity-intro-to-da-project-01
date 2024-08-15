@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../JOB.CLOUD.OUTPUTV2.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

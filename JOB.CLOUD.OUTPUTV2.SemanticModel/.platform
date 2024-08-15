@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "JOB.CLOUD.OUTPUTV2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c1e19d94-66dd-46b1-ab46-89a895b5aaad"
+  }
+}
